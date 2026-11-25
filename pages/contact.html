@@ -1,1 +1,53 @@
+<section class="contact">
+  <h2>Contactez-moi</h2>
+  <p>Une question ? Envoyez-moi un message.</p>
 
+  <form action="https://formsubmit.co/loveandserve2021@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="Nouveau message depuis le site">
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+    <label for="nom">Nom</label>
+    <input id="nom" name="nom" type="text" required>
+
+    <label for="email">Adresse e-mail</label>
+    <input id="email" name="email" type="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+
+    <button type="submit">Envoyer le message</button>
+  </form>
+</section>
+
+<style>
+  .contact {
+    max-width: 520px;
+    margin: 48px auto;
+    padding: 32px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+  }
+  .contact h2 { margin-top: 0; }
+  .contact p { color: #52525b; }
+  .contact label { display: block; margin: 20px 0 8px; font-weight: 600; }
+  .contact input:not([type="hidden"]), .contact textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #a1a1aa;
+    border-radius: 8px;
+    font: inherit;
+  }
+  .contact button {
+    margin-top: 24px;
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+  }
+  .contact button:hover { background: #1d4ed8; }
+</style>
